@@ -3,28 +3,15 @@
 This project simulates the interaction between a person, a wearable device, a virtual doctor, and a server to assess and improve sleep quality using a Belief-Desire-Intention (BDI) agent framework.
 
 ## Project Structure
-├── intelligence
-│   ├── config
-│   │   ├── bmi_encoder.pkl
-│   │   ├── bp_encoder.pkl
-│   │   ├── gender_encoder.pkl
-│   │   ├── occupation_encoder.pkl
-│   │   ├── random_forest_model.pkl
-│   │   ├── scaler.pkl
-│   │   └── sd_encoder.pkl
-│   ├── env.py
-│   ├── person.asl
-│   ├── server.asl
-│   ├── virtual_doctor.asl
-│   └── wearable.asl
-└── flow
-└── flow.png
+   
+![Files](./images/files.png)
 
 * **intelligence:** Contains the Python code for the BDI agent simulation.
     * **config:** Stores configuration files and trained machine learning models.
     * **env.py:** Sets up the simulation environment and runs the simulation.
     * **\*.asl:**  Files defining the behavior of each agent (person, server, virtual doctor, wearable).
-* **flow:** Contains an image illustrating the simulation flow.
+* **images:** Contains an image illustrating the simulation flow.
+
 
 ## How to Run
 
@@ -34,4 +21,5 @@ This project simulates the interaction between a person, a wearable device, a vi
    python3 ./intelligence/env.py
    
 * **Flow's Diagram.**
-![Flows Diagra](./flow/flow.png)
+   
+![Flows Diagram](./images/flow.png)
