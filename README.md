@@ -18,6 +18,7 @@ This project simulates the interaction between a person, a wearable device, a vi
 1. **Navigate to the project's root directory.** Make sure you are **outside** the `intelligence` folder.
 2. **Execute the simulation:**
    ```bash
+   pip install -r requirements.txt
    python3 ./intelligence/env.py
    
 * **Flow's Diagram.**
