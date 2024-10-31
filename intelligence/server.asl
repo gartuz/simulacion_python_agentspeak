@@ -9,7 +9,7 @@ quality(9).  /* The server assumes the person has a high sleep quality */
 
 +!data_receiver(Msg)[source(Sender)] <-
     .print("Got the message from : ", Sender, " saying : ", Msg);
-    .send(server, tellHow, "+!call_server(M) <- .print(\"Message received by the server :\", M); !some_goal(M).");
+    .send(server, tellHow, "+!call_server(M) <- .print(\"Message received by the server :\", M); !predict_goal(M).");
     .wait(2000); 
     .send(server, achieve, call_server(Msg)). 
 
@@ -17,7 +17,7 @@ quality(9).  /* The server assumes the person has a high sleep quality */
 +!bye <-
     .print("Bye by Server"). 
 
-+!some_goal(Msg) : true
++!predict_goal(Msg) : true
     <-  
     .make_prediction(Msg, X);
     .print("The achieved sleep quality is :", X); 
